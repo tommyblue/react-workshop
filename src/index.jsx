@@ -1,11 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var HelloReact = React.createClass({
-    render: function() {
-        return (<h1 style={{color: 'red'}}>Hello React!</h1>);
-    }
-});
+class HelloReact extends React.Component {
+  render() {
+    return (<h1 style={{color: 'red'}}>Hello React!</h1>);
+  }
+};
 
-var root = React.createElement(HelloReact);
-ReactDOM.render(root, document.getElementById('example'));
+ReactDOM.render(<HelloReact />, document.getElementById('root-element'));
