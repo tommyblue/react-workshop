@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 
 var HelloReact = React.createClass({
     render: function() {
-        return React.DOM.h1({ style: { color: 'red' } }, 'Hello React!');
+        return (<h1 style={{color: 'red'}}>Hello React!</h1>);
     }
 });
 
